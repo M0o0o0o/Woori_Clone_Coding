@@ -76,7 +76,7 @@
   </section>
   <section class=>
   </section>
-  <!-- seciont 생략 -->
+  <!-- section 생략 -->
   <footer class="block">
   </footer>
 </body>
@@ -108,5 +108,6 @@
     padding: 0 0 28px;
 }  
 ```
-  
-### 
+
+***
+
