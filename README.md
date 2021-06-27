@@ -66,3 +66,47 @@
 ***
 
 ### 전체적인 구조 
+- 클론코딩은 '우리은행 시니어플러스'의 메인 페이지만 진행했으며, 전부 px로만 작성하였습니다. 전체적인 HTML의 대략적인 구조는 다음과 같습니다. 
+```
+<body>
+  <a href="#" class="skip">본문바로가기</a>
+  <header>
+  </header>
+  <section>
+  </section>
+  <section class=>
+  </section>
+  <!-- seciont 생략 -->
+  <footer class="block">
+  </footer>
+</body>
+```
+
+- [메인 페이지](https://github.com/Lee-moo/Woori_Clone_Coding/blob/main/woori/index.png)에서 section에 해당하는 부분들(금융 서비스, 관심정보 ...)을 보면 전체적인 구조가 비슷한 것을 알 수 있습니다. 따라서 관련된 디자인의 중복을 피하고 코딩의 효율을 높이기 위해서 반복적으로 사용되는 부분들을 CSS에서 따로 Class Name을 부여해서 사용했습니다.
+```
+.block > div {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 100px 0 0;
+}
+
+.block .tit {
+    text-align: center;
+}
+
+.block .tit p {
+    font-size: 21px;
+    color: #666;
+    line-height: 1;
+    padding: 0 0 40px;
+}
+
+.block .tit h2 {
+    font-size: 38px;
+    color: #333;
+    line-height: 1;
+    padding: 0 0 28px;
+}  
+```
+  
+### 
